@@ -37,6 +37,7 @@ const CounterScreen = () => {
             dispatch({ type: 'increase_1', payload });
           }}
           counter={counter_1}
+          sectionCounterId="waterCounter"
         />
       </View>
       <View>
@@ -46,6 +47,7 @@ const CounterScreen = () => {
             dispatch({ type: 'increase_2', payload });
           }}
           counter={counter_2}
+          sectionCounterId="electricityCounter"
         />
       </View>
       <View>
@@ -55,6 +57,7 @@ const CounterScreen = () => {
             dispatch({ type: 'increase_3', payload });
           }}
           counter={counter_3}
+          sectionCounterId="gasCounter"
         />
       </View>
       <View>
@@ -64,6 +67,7 @@ const CounterScreen = () => {
             dispatch({ type: 'increase_4', payload });
           }}
           counter={counter_4}
+          sectionCounterId="broadbandCounter"
         />
       </View>
     </SafeAreaView>

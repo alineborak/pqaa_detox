@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 
-export default CounterButton = ({ text, onPress, counter }) => {
+export default CounterButton = ({ text, onPress, counter, sectionCounterId }) => {
   return (
     <View style={styles.view}>
       <TouchableOpacity onPress={onPress}>
-        <View style={styles.button}>
+        <View style={styles.button} testID={`counterButtons-${sectionCounterId}`}>
           <Text style={styles.buttonText}>{text}</Text>
         </View>
       </TouchableOpacity>
